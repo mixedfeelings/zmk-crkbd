@@ -49,10 +49,10 @@
                 };
                 raise_layer {
                         bindings = <
-   &kp TAB   &trans &trans &trans &trans &trans    &trans &kp MINUS &kp EQUAL &kp BSLH &kp DEL  &kp BSPC 
-   &kp LCTRL &kp N1 &kp N2 &kp N3 &kp N4 &kp N5    &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &kp GRAVE
-   &kp LSHFT &trans &trans &trans &trans &trans    &trans &trans    &kp LBKT  &kp RBKT &kp FSLH &kp RSHFT
-                           &trans &trans &BSPC   &trans &trans    &trans 
+   &kp TAB   &trans &trans &trans &trans &trans   &trans &kp MINUS &kp EQUAL &kp BSLH &kp DEL  &kp BSPC 
+   &kp LCTRL &kp N1 &kp N2 &kp N3 &kp N4 &kp N5   &kp N6 &kp N7    &kp N8    &kp N9   &kp N0   &kp GRAVE
+   &kp LSHFT &trans &trans &trans &trans &trans   &trans &trans    &kp LBKT  &kp RBKT &kp FSLH &kp RSHFT
+                           &trans &trans &BSPC    &trans &trans    &trans 
                         >;
                 };
                 utility_layer {
@@ -62,6 +62,6 @@
    &bt BT_CLR &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5   &trans   &trans   &trans &trans    &trans &trans
                                         &trans       &trans       &trans         &trans   &trans   &trans
                         >;
-                };()
+                };
         };
 };
