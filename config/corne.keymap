@@ -8,8 +8,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
-#define HRML(k1,k2,k3,k4,k5) &ht LCTRL &ht LCTRL k2 &ht LALT k3 &ht LGUI k4 &ht LSHIFT k5  
-
 
 &mt {
        // flavor = "tap-preferred";
@@ -72,22 +70,22 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
-// |  TAB |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
-// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC  |
+// |  ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP|
+// |  TAB |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '  |
+// | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC |
 //                    | GUI | CMD | ENT |   | SPC | RSE  |  PP |
                         bindings = <
-   &kp ESC         &kp Q         &kp W &kp E    &kp R    &kp T       &kp Y       &kp U        &kp I     &kp O   &kp P           &kp BSPC
-   HRML(TAB,       A,            S,    D,       F)       &kp G       &kp H       &ht RSHIFT J &kp K     &kp L   &kp SEMI        &kp SQT
-   &mt LSHIFT LPAR &mt LSHIFT Z  &kp X &kp C    &kp V    &kp B       &kp N       &kp M        &kp COMMA &kp DOT &mt RSHIFT FSLH &mt RSHIFT RPAR
-                                       &kp LALT &kp LGUI &lt 1 RET   &lt 2 SPACE &mo 3        &kp C_PP
+   &kp ESC         &kp Q        &kp W      &kp E      &kp R        &kp T       &kp Y       &kp U        &kp I     &kp O   &kp P           &kp BSPC
+   &ht LCTRL TAB   &ht LCTRL A  &ht LALT S &ht LGUI D &ht RSHIFT F &kp G       &kp H       &ht RSHIFT J &kp K     &kp L   &kp SEMI        &kp SQT
+   &mt LSHIFT LPAR &mt LSHIFT Z &kp X      &kp C      &kp V        &kp B       &kp N       &kp M        &kp COMMA &kp DOT &mt RSHIFT FSLH &mt RSHIFT RPAR
+                                           &kp LALT   &kp LGUI     &lt 1 RET   &lt 2 SPACE &mo 3        &kp C_PP
                         >;
                 };
                 left_layer {
 // -----------------------------------------------------------------------------------------
-// |GRAVE|     |     |     |     |     |   |     |     |     |     | DEL |      |
-// | CAPS|  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |      |
-// |     |     |Vol -|Vol +| PLAY|     |   |     |     |  {  |  }  |  ?  |
+// |GRAVE|     |     |     |     |     |   |     |     |     |     | DEL |     |
+// | CAPS|  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |     |
+// |     |     |Vol -|Vol +| PLAY|     |   |     |     |  {  |  }  |  ?  |     |
 //                   |     |     |     |   |     |     |     |
                         bindings = <
    &kp ESC  &trans   &trans       &trans       &trans   &trans      &trans    &kp UNDER &kp PLUS        &kp PIPE &kp DEL   &trans
@@ -99,9 +97,9 @@
 
                 right_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |     |     |     |     |     |   |     |  -  |  =  |  \  |     | BKSP |
-// |      |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |  `   |
-// |      |     |     |     |     |     |   |  _  |     |  [  |  ]  |  ?  |  ~   |
+// |  TAB |     |     |     |     |     |   |     |  -  |  =  |  \  | BKSP|     |
+// |      |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |  `  |
+// |      |     |     |     |     |     |   |  _  |     |  [  |  ]  |  ?  |     |
 //                    |     |     |     |   |     |     |     |
                         bindings = <
    &kp TAB &trans &trans &trans &trans &trans   &trans    &kp MINUS &kp EQUAL &kp BSLH &kp BSPC  &trans
