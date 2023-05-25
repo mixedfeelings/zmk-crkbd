@@ -57,10 +57,10 @@
                 };
                 utility_layer {
                         bindings = <
-   &kp TAB    &trans       &kp UP       &trans       &kp HOME     &kp PG_UP      &kp LC(LS(LG(4))) &trans        &trans        &trans        &trans &trans
-   &kp LCTRL  &kp LEFT     &kp DOWN     &kp RIGHT    &kp END      &kp PG_DN      &kp LEFT          &kp DOWN      &kp UP        &kp RIGHT     &trans &trans
-   &bt BT_CLR &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5   &trans            &kp LG(LS(M)) &kp LG(LS(O)) &kp LG(LS(F)) &trans &trans
-                                        &trans       &trans       &trans         &trans            &trans   &trans
+   &kp TAB    &trans       &kp UP       &trans       &kp HOME     &kp PG_UP      &trans   &trans   &trans &trans    &trans &trans
+   &kp LCTRL  &kp LEFT     &kp DOWN     &kp RIGHT    &kp END      &kp PG_DN      &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+   &bt BT_CLR &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &bt BT_SEL 5   &trans   &trans   &trans &trans    &trans &trans
+                                        &trans       &trans       &trans         &trans   &trans   &trans
                         >;
                 };()
         };
