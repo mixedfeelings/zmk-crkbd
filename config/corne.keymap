@@ -73,12 +73,12 @@
 // |  ESC |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP|
 // |  TAB |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '  |
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC |
-//                    | GUI | CMD | ENT |   | SPC | RSE  |  PP |
+//                    | GUI | CMD | ENT |   | SPC | TRI  |  PP |
                         bindings = <
    &kp ESC         &kp Q        &kp W      &kp E      &kp R        &kp T       &kp Y       &kp U        &kp I     &kp O   &kp P           &kp BSPC
    &ht LCTRL TAB   &ht LCTRL A  &ht LALT S &ht LGUI D &ht RSHIFT F &kp G       &kp H       &ht RSHIFT J &kp K     &kp L   &kp SEMI        &kp SQT
    &mt LSHIFT LPAR &mt LSHIFT Z &kp X      &kp C      &kp V        &kp B       &kp N       &kp M        &kp COMMA &kp DOT &mt RSHIFT FSLH &mt RSHIFT RPAR
-                                           &kp LALT   &kp LGUI     &lt 1 RET   &lt 2 SPACE &mo 3        &kp C_PP
+                                           &kp LALT   &kp LGUI     &lt 1 RET   &lt 2 SPACE &kp T        &kp C_PP
                         >;
                 };
                 left_layer {
@@ -88,10 +88,10 @@
 // |     |     |Vol -|Vol +| PLAY|     |   |     |     |  {  |  }  |  ?  |     |
 //                   |     |     |     |   |     |     |     |
                         bindings = <
-   &kp ESC  &trans   &trans       &trans       &trans   &trans      &trans    &kp UNDER &kp PLUS        &kp PIPE &kp DEL   &trans
-   &kp CAPS &kp EXCL &kp AT       &kp HASH     &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR  &trans
-   &trans   &trans   &kp C_VOL_DN &kp C_VOL_UP &kp C_PP &trans      &trans    &trans    &kp LBRC        &kp RBRC &kp QMARK &trans
-                                    &trans     &trans   &trans      &trans    &trans    &trans
+   &kp GRAVE &trans   &trans       &trans       &trans   &trans      &trans    &kp UNDER &kp PLUS        &kp PIPE &kp DEL   &trans
+   &kp CAPS  &kp EXCL &kp AT       &kp HASH     &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR  &trans
+   &trans    &trans   &kp C_VOL_DN &kp C_VOL_UP &kp C_PP &trans      &trans    &trans    &kp LBRC        &kp RBRC &kp QMARK &trans
+                                   &trans       &trans   &trans      &trans    &trans    &trans
                         >;
                 };
 
@@ -116,7 +116,7 @@
 // |     |BTCLR| BT1 | BT2 | BT3 | BT4 |   |     |TMSMA|TMSMV|TMSFS|     |     | 
 //                   |     |     |     |   |     |     |     |
                         bindings = <
-   &trans &trans     &kp UP       &trans       &kp HOME     &kp PG_UP      &kp LS(LG(4)) &trans        &trans        &trans        &trans &trans
+   &trans &trans     &kp UP       &trans       &kp HOME     &kp PG_UP      &kp LS(LG(N4)) &trans        &trans        &trans        &trans &trans
    &trans &kp LEFT   &kp DOWN     &kp RIGHT    &kp END      &kp PG_DN      &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans &trans
    &trans &bt BT_CLR &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans        &kp LS(LG(M)) &kp LS(LG(O)) &kp LS(LG(F)) &trans &trans
                                   &trans       &trans       &trans         &trans        &trans        &trans
