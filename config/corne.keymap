@@ -76,7 +76,7 @@
 //                    | GUI | CMD | ENT |   | SPC | TRI  |  PP |
                         bindings = <
    &kp ESC         &kp Q        &kp W      &kp E      &kp R        &kp T       &kp Y       &kp U        &kp I     &kp O   &kp P           &kp BSPC
-   &ht LCTRL TAB   &ht LCTRL A  &ht LALT S &ht LGUI D &ht RSHIFT F &kp G       &kp H       &ht RSHIFT J &kp K     &kp L   &kp SEMI        &kp SQT
+   &ht LCTRL TAB   &ht LCTRL A  &ht LALT S &ht LGUI D &ht LSHIFT F &kp G       &kp H       &ht RSHIFT J &kp K     &kp L   &kp SEMI        &kp SQT
    &mt LSHIFT LPAR &mt LSHIFT Z &kp X      &kp C      &kp V        &kp B       &kp N       &kp M        &kp COMMA &kp DOT &mt RSHIFT FSLH &mt RSHIFT RPAR
                                            &kp LALT   &kp LGUI     &lt 1 RET   &lt 2 SPACE &kp T        &kp C_PP
                         >;
