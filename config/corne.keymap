@@ -27,13 +27,13 @@
                 };   
         };
 
-        conditional_layers {
-                compatible = "zmk,conditional-layers";
-                tri_layer {
-                        if-layers = <1 2>;
-                        then-layer = <3>;
-                };
-        };
+        // conditional_layers {
+        //         compatible = "zmk,conditional-layers";
+        //         tri_layer {
+        //                 if-layers = <1 2>;
+        //                 then-layer = <3>;
+        //         };
+        // };
 
         combos {
                 compatible = "zmk,combos";
@@ -61,7 +61,12 @@
                         timeout-ms = <50>;
                         key-positions = <33 34>;
                         bindings = <&kp QMARK>;
-                };    
+                }; 
+               combo_trilayer {
+                        timeout-ms = <50>;
+                        key-positions = <38 39>;
+                        bindings = <&mo 3>;
+                }; 
   
         };
 
@@ -75,9 +80,9 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  | ESC |
 //                    | GUI | CMD | ENT |   | SPC | TRI  |  PP |
                         bindings = <
-   &kp ESC         &kp Q        &kp W      &kp E      &kp R        &kp T       &kp Y       &kp U        &kp I     &kp O   &kp P           &kp BSPC
-   &ht LCTRL TAB   &ht LCTRL A  &ht LALT S &ht LGUI D &ht LSHIFT F &kp G       &kp H       &ht RSHIFT J &kp K     &kp L   &kp SEMI        &kp SQT
-   &mt LSHIFT LPAR &mt LSHIFT Z &kp X      &kp C      &kp V        &kp B       &kp N       &kp M        &kp COMMA &kp DOT &mt RSHIFT FSLH &mt RSHIFT RPAR
+   &kp ESC         &kp Q        &kp W      &kp E      &kp R        &kp T       &kp Y       &kp U        &kp I      &kp O   &kp P           &kp BSPC
+   &ht LCTRL TAB   &ht LCTRL A  &ht LALT S &ht LGUI D &ht LSHIFT F &kp G       &kp H       &ht RSHIFT J &ht RGUI K &kp L   &kp SEMI        &kp SQT
+   &mt LSHIFT LPAR &mt LSHIFT Z &kp X      &kp C      &kp V        &kp B       &kp N       &kp M        &kp COMMA  &kp DOT &mt RSHIFT FSLH &mt RSHIFT RPAR
                                            &kp LALT   &kp LGUI     &lt 1 RET   &lt 2 SPACE &mo 3        &kp C_PP
                         >;
                 };
