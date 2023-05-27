@@ -116,15 +116,15 @@
 
                 tri_layer {
 // -----------------------------------------------------------------------------------------
-// |     |     |  UP |     | HOME|PG UP|   | SCRS|     |     |     | DEL |     |
-// |     | LEFT| DOWN|RIGHT| END |PG DN|   | LEFT| DOWN|  UP |RIGHT|     |     |
+// |     |     |  UP |     |PG UP| HOME|   |SCRS4|SCRS3|     |     | DEL |     |
+// |     | LEFT| DOWN|RIGHT|PG DN| END |   | LEFT| DOWN|  UP |RIGHT|     |     |
 // |     |BTCLR| BT1 | BT2 | BT3 | BT4 |   |     |TMSMA|TMSMV|TMSFS|     |     | 
 //                   |     |     |     |   |     |     |     |
                         bindings = <
-   &trans &trans     &kp UP       &trans       &kp HOME     &kp PG_UP      &kp LS(LG(N4)) &trans       &trans        &trans        &trans &trans
-   &trans &kp LEFT   &kp DOWN     &kp RIGHT    &kp END      &kp PG_DN      &kp LEFT      &kp DOWN      &kp UP        &kp RIGHT     &trans &trans
-   &trans &bt BT_CLR &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans        &kp LS(LG(M)) &kp LS(LG(O)) &kp LS(LG(F)) &trans &trans
-                                  &trans       &trans       &trans         &trans        &trans        &trans
+   &trans &trans     &kp UP       &trans       &kp PG_UP &kp HOME          &kp LS(LG(N4)) &kp LS(LG(N3)) &trans        &trans        &trans &trans
+   &trans &kp LEFT   &kp DOWN     &kp RIGHT    &kp PG_DN &kp END           &kp LEFT       &kp DOWN       &kp UP        &kp RIGHT     &trans &trans
+   &trans &bt BT_CLR &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &trans         &kp LS(LG(M))  &kp LS(LG(O)) &kp LS(LG(F)) &trans &trans
+                                  &trans       &trans       &trans         &trans         &trans         &trans
                         >;
                 };
         };
